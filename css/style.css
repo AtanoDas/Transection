@@ -1,0 +1,150 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-shadow: none;
+}
+body{
+	background: wheat;
+}
+.method h6,.calculation h6{
+	padding: 0px 10px;
+}
+.method button{
+	width: 100%;
+	background: white;
+	border: none;
+	height: 40px;
+	text-align: left;
+	border-radius: 5px;
+
+	
+}
+
+.method button p{
+	width: 70%;
+	margin-right: 40px;
+	padding: 5px 10px 0px 10px;
+
+}
+
+.method button .icon{
+	padding: 4px 0px;
+}
+.method button i{
+	width: 30px;
+	height: 30px;
+	line-height: 30px !important;
+	border: 1.3px solid green;
+	color: green;
+	text-align: center;
+	border-radius: 60px;
+	font-size: 15px;
+}
+.method button .mobile{
+	font-size: 20px !important;
+
+}
+
+.method button:hover,
+.method button p:hover button p
+{
+	background-color: green;
+	color: white;
+	border: none;
+}
+.method button:hover .icon i,
+.method button:focus .icon i{
+	color: red !important;
+	background: white;
+	border-radius: 50px;
+	padding-right: -10px !important;
+}
+.method button:focus,
+.method button p:focus button p{
+	background-color: green;
+	color: white;
+	outline: none;
+	border: none;
+}
+
+.calculation{
+
+}
+.calculation .gbp-amount{
+	height: 50px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+
+}
+.gbp-amount .amount{
+	text-align: center;
+    padding-top: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+
+}
+.gbp-amount .amount input{
+	width: 100%;
+    padding: 5px 10px;
+    border: none;
+
+}
+.gbp-amount .amount input:focus{
+	outline: none;
+}
+/*.gbp-amount .up-down{
+
+}
+.gbp-amount .up-down i{
+
+}
+.gbp-amount .up-down .up{
+
+}
+.gbp-amount .up-down .down{
+
+}*/
+.gbp-amount .gbp-btn{
+	display: flex;
+    justify-content: center;
+    background: green;
+    border-radius: 5px;
+}
+.gbp-amount .gbp-btn img{
+	width: 20px;
+	height: 15px;
+	margin-top: 15px;
+}
+.gbp-amount h5{
+	padding: 5px 5px;
+	font-size: 25px;
+	color: white;
+}
+
+
+.price p{
+	padding: 0px 10px;
+}
+
+.sub-btn{
+    padding: 10px 80px;
+
+}
+.sub-btn .started{
+	width: 100%;
+    height: 50px;
+    background-color: green;
+    border: none;
+    border-radius: 50px;
+	outline: none;
+	cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+.sub-btn .started i{
+	margin-left: 10px;
+    font-size: 18px;
+    font-weight: 600;
+
+}
