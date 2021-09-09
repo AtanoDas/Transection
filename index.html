@@ -20,9 +20,9 @@
     <title>Transaction</title>
   </head>
   <body>
-    <section class="calculator">
-        <div class="header  pt-3 pb-3 container" style="background-color: #070001; text-align: center;">
-          <h1 class="" style="color: white; text-transform: uppercase; font-weight: 400;">Quick Calculate</h1>
+    <section class="calculator m-auto" style="width:350px; height: 350px;">
+        <div class="header  pt-3 pb-1 container" style="background-color: #070001; text-align: center;">
+          <h3 class="" style="color: white;font-size: 20px; text-transform: uppercase; font-weight: 700;">Quick Calculate</h3>
           
         </div>
         <div class="method pt-2 mb-1">
@@ -32,13 +32,13 @@
               <div class="col-4" style="padding: 0px !important;">
                 <button style="display: flex;">
                 <p >Cash</p>
-                <div class="icon"><img src="img/cash.png"></div>
+                <div class="icon"><img src="img/cash.png" width="20px"></div>
               </button>
               </div>
               <div class="col-4" style="padding: 0px 10px !important;">
                 <button style="display: flex;">
                 <p >Bank</p>
-                <div class="icon pt-1"><i class="fa fa-university" aria-hidden="true"></i></div>
+                <div class="icon"><i class="fa fa-university" aria-hidden="true"></i></div>
               </button>
               </div>
               <div class="col-4" style="padding: 0px !important;">
@@ -55,11 +55,11 @@
         <div class="calculation mt-2">
           <div class="container">
             <h6>I would like to send</h6>
-            <div class="gbp-amount m-3" style="display:flex; background: white;">
-              <div class="amount" style="width:85%">
+            <div class="gbp-amount mt-2" style="display:flex; background: white;">
+              <div class="amount" style="width:60%">
                 <input type="number" value="" id="gbp-amount" oninput="price()">
               </div>
-              <div class="gbp-btn" style="; width: 15%;">
+              <div class="gbp-btn" style="width: 40%;">
                 <img src="img/gbp.png" class="image-fluid">
                 <h5>GBP</h5>
               </div>
@@ -73,11 +73,11 @@
         <div class="calculation mt-2">
           <div class="container">
             <h6>Recipient gets</h6>
-            <div class="gbp-amount m-3" style="display:flex; background: white;">
-              <div class="amount" style="width:85%">
+            <div class="gbp-amount mt-2 mb-2" style="display:flex; background: white;">
+              <div class="amount" style="width:60%">
                 <input type="number" value="" id="bdt-amount" oninput="bdtprice()">
               </div>
-              <div class="gbp-btn" style="; width: 15%;">
+              <div class="gbp-btn" style="width: 40%;">
                 <img src="img/bdt.png" class="image-fluid">
                 <h5>BDT</h5>
               </div>
@@ -91,7 +91,7 @@
           <p>1 GBP = <span id="oneprice">116.50</span> BDT | Fee : 3.99</p>
         </div>
 
-        <div class="sub-btn mb-5 container">
+        <div class="sub-btn container">
           <button type="submit" class="started">Get Started!</button>
         </div>
     </section>
