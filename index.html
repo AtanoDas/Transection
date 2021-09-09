@@ -5,7 +5,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Font Awesome Link -->
@@ -18,30 +21,30 @@
   </head>
   <body>
     <section class="calculator">
-        <div class="header  pt-3 pb-3" style="background-color: green; text-align: center;">
+        <div class="header  pt-3 pb-3 container" style="background-color: #070001; text-align: center;">
           <h1 class="" style="color: white; text-transform: uppercase; font-weight: 400;">Quick Calculate</h1>
           
         </div>
-        <div class="method pt-2 mb-5">
+        <div class="method pt-2 mb-1">
           <div class="container">
             <h6>Delivery Method</h6>
             <div class="row m-auto">
-              <div class="col-4">
+              <div class="col-4" style="padding: 0px !important;">
                 <button style="display: flex;">
                 <p >Cash</p>
-                <div class="icon"><i class="fa fa-money"></i></div>
+                <div class="icon"><img src="img/cash.png"></div>
               </button>
               </div>
-              <div class="col-4">
+              <div class="col-4" style="padding: 0px 10px !important;">
                 <button style="display: flex;">
                 <p >Bank</p>
-                <div class="icon"><i class="fa fa-university"></i></div>
+                <div class="icon pt-1"><i class="fa fa-university" aria-hidden="true"></i></div>
               </button>
               </div>
-              <div class="col-4">
-                <button style="display: flex;">
+              <div class="col-4" style="padding: 0px !important;">
+                <button style="display: flex;" class="last">
                 <p >bKash</p>
-                <div class="icon"><i class="fa fa-mobile mobile"></i></div>
+                <div class="icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
               </button>
               </div>
 
@@ -57,7 +60,7 @@
                 <input type="number" value="" id="gbp-amount" oninput="price()">
               </div>
               <div class="gbp-btn" style="; width: 15%;">
-                <img src="img/gbp.jpg" class="image-fluid" width="20px">
+                <img src="img/gbp.png" class="image-fluid">
                 <h5>GBP</h5>
               </div>
 
@@ -75,7 +78,7 @@
                 <input type="number" value="" id="bdt-amount" oninput="bdtprice()">
               </div>
               <div class="gbp-btn" style="; width: 15%;">
-                <img src="img/bd.jpg" class="image-fluid" width="20px">
+                <img src="img/bdt.png" class="image-fluid">
                 <h5>BDT</h5>
               </div>
 
@@ -85,18 +88,19 @@
           
         </div>
         <div class="price container">
-          <p>1 GBP = 115.6 BDT | Fee : 3.99</p>
+          <p>1 GBP = <span id="oneprice">116.50</span> BDT | Fee : 3.99</p>
         </div>
 
         <div class="sub-btn mb-5 container">
-          <button type="submit" class="started">Get Started!<span><i class="fa fa-chevron-right" aria-hidden="true"></i></span></button>
+          <button type="submit" class="started">Get Started!</button>
         </div>
     </section>
     
     <script type="">
         function price() {
           var gbp = document.getElementById('gbp-amount').value;
-        var price = '115.6';
+          var price = document.getElementById('oneprice').innerHTML;
+
         if(gbp<0){
           document.getElementById('bdt-amount').value=(0);
 
@@ -128,6 +132,5 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
   </body>
 </html>

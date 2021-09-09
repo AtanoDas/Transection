@@ -1,0 +1,131 @@
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* CSS */
+  .method button p{
+    margin-right: 18px !important;
+  }
+  .method .last p{
+    margin-right: 30px !important;
+  }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  /* CSS */
+  .method button p{
+    margin-right: 8px !important;
+  }
+  .method .last p{
+    margin-right: 20px !important;
+  }
+  .gbp-amount .gbp-btn{
+    width: 30% !important;
+  }
+  .sub-btn {
+    padding: 10px 30px !important;
+  }
+
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 370px) and (max-width: 480px) {
+  
+  /* CSS */
+  .header h1{
+    font-size: 30px !important;
+  }
+  .method button p{
+    margin-right: 0px !important;
+  }
+  .method .last p{
+    margin-right: 10px !important;
+  }
+  .icon img{
+    width: 25px !important;
+  }
+  .gbp-amount .gbp-btn{
+    width: 40% !important;
+  }
+  .sub-btn {
+    padding: 10px 30px !important;
+  }
+  .method .icon i{
+    font-size: 20px !important;
+  }
+  .method .last i{
+    font-size: 30px !important;
+  }
+  
+}
+
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 220px to 370px
+*/
+
+@media (min-width: 270px) and (max-width: 370px){
+  /*CSS*/
+  .header h1{
+    font-size: 25px !important;
+  }
+  .gbp-amount h5{
+    padding: 12px 3px !important;
+    font-size: 15px !important;
+  }
+  .method button p{
+    font-size: 10px !important;
+    font-weight: 600 !important;
+    margin-right: 0px !important;
+    padding: 10px 0px 0px 5px !important;
+  }
+  .method .last p{
+    margin-right: 0px !important;
+  }
+  .icon img{
+    width: 20px !important;
+  }
+  .gbp-amount .gbp-btn{
+    width: 40% !important;
+  }
+  .sub-btn {
+    padding: 10px 30px !important;
+  }
+  .method .icon i{
+    font-size: 15px !important;
+  }
+  .method .last i{
+    font-size: 25px !important;
+  }
+  
+
+}

@@ -2,12 +2,19 @@
 	padding: 0;
 	margin: 0;
 	box-shadow: none;
+	font-family: 'Poppins', sans-serif;
 }
+
 body{
-	background: wheat;
+	background: #d1cee6;
+}
+.calculator{
+	margin-top: 50px;
 }
 .method h6,.calculation h6{
 	padding: 0px 10px;
+	color: #070001;
+	font-weight: 600;
 }
 .method button{
 	width: 100%;
@@ -16,71 +23,64 @@ body{
 	height: 40px;
 	text-align: left;
 	border-radius: 5px;
+	cursor: pointer;
 
 	
 }
 
 .method button p{
+	color: #070001;
 	width: 70%;
 	margin-right: 40px;
 	padding: 5px 10px 0px 10px;
+
+}
+.method .last p{
+	margin-right: 60px !important;
 
 }
 
 .method button .icon{
 	padding: 4px 0px;
 }
-.method button i{
-	width: 30px;
-	height: 30px;
-	line-height: 30px !important;
-	border: 1.3px solid green;
-	color: green;
-	text-align: center;
-	border-radius: 60px;
-	font-size: 15px;
-}
-.method button .mobile{
-	font-size: 20px !important;
 
-}
-
-.method button:hover,
-.method button p:hover button p
-{
-	background-color: green;
-	color: white;
+.method button:hover p,
+.method .icon:hover i,
+.method button:hover{
+    background-color: #070001;
+	color: white !important;
 	border: none;
 }
-.method button:hover .icon i,
-.method button:focus .icon i{
-	color: red !important;
-	background: white;
-	border-radius: 50px;
-	padding-right: -10px !important;
-}
 .method button:focus,
-.method button p:focus button p{
-	background-color: green;
-	color: white;
+.method .icon:focus i,
+.method button:focus p{
+	background-color: #070001;
+	color: white !important;
 	outline: none;
 	border: none;
 }
+.method .icon{
 
+}
+.method .icon i{
+	font-size: 25px;
+	font-weight: 400;
+}
+.method .last i{
+	font-size: 35px !important;
+}
 .calculation{
-
 }
 .calculation .gbp-amount{
 	height: 50px;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
+	border-radius: 20px;
+	background-color: #070001 !important;
 
 }
 .gbp-amount .amount{
 	text-align: center;
-    padding-top: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    padding: 5px 10px;
+	border-radius: 10px;
 
 
 }
@@ -88,10 +88,15 @@ body{
 	width: 100%;
     padding: 5px 10px;
     border: none;
+    background-color: #070001;
+    color: white;
+
 
 }
 .gbp-amount .amount input:focus{
 	outline: none;
+    background-color: #070001;
+
 }
 /*.gbp-amount .up-down{
 
@@ -108,8 +113,9 @@ body{
 .gbp-amount .gbp-btn{
 	display: flex;
     justify-content: center;
-    background: green;
-    border-radius: 5px;
+    background-color: #070001;
+    border-radius: 10px;
+    background-color: white;
 }
 .gbp-amount .gbp-btn img{
 	width: 20px;
@@ -117,9 +123,10 @@ body{
 	margin-top: 15px;
 }
 .gbp-amount h5{
-	padding: 5px 5px;
-	font-size: 25px;
-	color: white;
+	padding: 12px 10px;
+	font-size: 20px;
+	font-weight: 400;
+	color: #070001;
 }
 
 
@@ -134,7 +141,7 @@ body{
 .sub-btn .started{
 	width: 100%;
     height: 50px;
-    background-color: green;
+    background-color: #070001;
     border: none;
     border-radius: 50px;
 	outline: none;
@@ -145,6 +152,6 @@ body{
 .sub-btn .started i{
 	margin-left: 10px;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
 
 }
